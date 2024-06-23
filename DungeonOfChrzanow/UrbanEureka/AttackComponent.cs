@@ -15,7 +15,7 @@ class AttackComponent
         int distanceY = Math.Abs(positionComponent.Position.Y -  targetPosition.Y);
         
 
-        // TODO Think if taget should be in range when it is in the same position as me
+       
         return (distanceX <= range && distanceY == 0) || (distanceX == 0 && distanceY <= range);
     }
 
