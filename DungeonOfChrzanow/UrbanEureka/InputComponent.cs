@@ -1,0 +1,4 @@
+interface IInputComponent
+{
+    Point GetDirection();
+}
