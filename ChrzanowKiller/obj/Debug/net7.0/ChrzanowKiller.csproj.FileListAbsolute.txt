@@ -1,0 +1,14 @@
+D:\kodowanie\ChrzanowKiller\bin\Debug\net7.0\ChrzanowKiller.exe
+D:\kodowanie\ChrzanowKiller\bin\Debug\net7.0\ChrzanowKiller.deps.json
+D:\kodowanie\ChrzanowKiller\bin\Debug\net7.0\ChrzanowKiller.runtimeconfig.json
+D:\kodowanie\ChrzanowKiller\bin\Debug\net7.0\ChrzanowKiller.dll
+D:\kodowanie\ChrzanowKiller\bin\Debug\net7.0\ChrzanowKiller.pdb
+D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.GeneratedMSBuildEditorConfig.editorconfig
+D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.AssemblyInfoInputs.cache
+D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.AssemblyInfo.cs
+D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.csproj.CoreCompileInputs.cache
+D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.dll
+D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\refint\ChrzanowKiller.dll
+D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.pdb
+D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.genruntimeconfig.cache
+D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\ref\ChrzanowKiller.dll
