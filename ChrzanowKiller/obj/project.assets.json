@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mirek\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\kodowanie\\ChrzanowKiller\\ChrzanowKiller.csproj",
+      "projectUniqueName": "C:\\Users\\PC\\Downloads\\ChrzanowKiller\\ChrzanowKiller.csproj",
       "projectName": "ChrzanowKiller",
-      "projectPath": "D:\\kodowanie\\ChrzanowKiller\\ChrzanowKiller.csproj",
-      "packagesPath": "C:\\Users\\mirek\\.nuget\\packages\\",
-      "outputPath": "D:\\kodowanie\\ChrzanowKiller\\obj\\",
+      "projectPath": "C:\\Users\\PC\\Downloads\\ChrzanowKiller\\ChrzanowKiller.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\PC\\Downloads\\ChrzanowKiller\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mirek\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"

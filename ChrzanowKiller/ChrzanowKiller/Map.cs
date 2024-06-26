@@ -21,7 +21,6 @@ public class Map
         { CellType.BackWall, '▒'},
         { CellType.Door, '█'},
         { CellType.Player, '@'}
-        { CellType.NPC, '%'}
     };
 
     private Dictionary<CellType, ConsoleColor> colorMap = new Dictionary<CellType, ConsoleColor>
@@ -37,11 +36,9 @@ public class Map
         { CellType.BackWall, ConsoleColor.DarkBlue},
         { CellType.Door, ConsoleColor.DarkRed},
         { CellType.Player, ConsoleColor.White}
-        { CellType.NPC, ConsoleColor.White}
     };
     public Map()
     {
-        // Simplified map data
         mapData = new int[][]
         {
             new [] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
@@ -53,11 +50,11 @@ public class Map
             new [] {0,0,0,0,0,0,0,9,1,1,1,1,1,1,1,1,1,1,4,4,4,4,1,1,4,4,4,4,1,1,9,0,0,0,0,0,0,0,0,0,0,9,7,5,5,5,5,5,5,5,5,5,5,5,7,9,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0},
             new [] {0,2,0,0,0,0,0,9,1,1,1,1,1,1,1,9,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9,0,2,0,0,0,0,0,0,0,0,9,1,1,1,1,1,1,1,1,1,1,1,1,1,9,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
             new [] {0,0,0,0,0,0,0,9,1,1,1,1,1,1,1,9,1,1,1,9,8,8,8,8,1,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,9,1,4,4,1,4,4,3,4,4,1,4,4,1,9,0,0,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,0,0,0,0,0,0,0,0,0},
-            new [] {0,0,0,0,9,8,8,8,8,8,8,8,8,8,8,9,1,1,1,9,7,5,7,9,1,9,7,5,5,5,5,5,5,5,5,5,5,5,5,5,5,9,1,4,4,1,4,3,1,4,4,1,4,4,1,9,0,0,9,7,0,0,0,5,5,0,0,0,5,5,0,0,0,5,5,0,0,0,7,9,0,2,0,0,0,0,0,0,0},
+            new [] {0,0,0,0,9,8,8,8,8,8,8,8,8,8,8,9,1,1,1,9,7,5,7,9,1,9,7,5,5,5,5,5,5,5,5,5,5,5,5,5,5,9,1,4,4,1,4,4,1,4,4,1,4,4,1,9,0,0,9,7,0,0,0,5,5,0,0,0,5,5,0,0,0,5,5,0,0,0,7,9,0,2,0,0,0,0,0,0,0},
             new [] {0,0,0,0,9,7,5,5,5,5,5,5,5,5,7,9,1,1,1,9,7,5,7,9,1,9,7,5,5,5,5,5,5,5,5,5,5,5,5,5,5,9,1,4,4,1,4,4,1,4,4,1,4,4,1,9,0,0,9,7,0,0,0,5,5,0,0,0,5,5,0,0,0,5,5,0,0,0,7,9,0,0,0,0,0,0,0,0,0},
             new [] {0,0,0,2,9,7,5,5,5,5,5,5,5,5,7,9,1,1,1,9,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,9,1,1,1,1,1,1,1,1,1,1,1,1,1,9,0,0,9,7,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,7,9,8,8,8,0,0,0,0,0,0},
             new [] {0,0,0,0,9,1,1,1,1,1,1,1,1,1,1,9,1,1,1,9,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,8,1,8,8,8,8,8,8,8,8,8,8,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,9,5,5,9,0,0,0,0,0,0},
-            new [] {0,0,0,0,9,1,1,1,3,1,1,1,1,1,11,9,1,1,1,9,7,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,7,9,1,9,7,5,5,5,5,5,5,7,9,1,4,4,4,1,1,4,4,4,1,1,4,4,4,1,1,4,4,4,1,9,5,5,9,0,0,0,0,0,0},
+            new [] {0,0,0,0,9,1,1,1,3,1,1,1,1,1,1,9,1,1,1,9,7,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,7,9,1,9,7,5,5,5,5,5,5,7,9,1,4,4,4,1,1,4,4,4,1,1,4,4,4,1,1,4,4,4,1,9,5,5,9,0,0,0,0,0,0},
             new [] {0,2,0,0,9,1,1,3,1,1,1,1,1,1,1,9,1,1,1,9,7,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,7,9,1,9,7,5,5,5,5,5,5,7,9,1,4,4,4,1,1,4,4,4,1,1,4,4,4,1,1,4,4,4,1,9,5,5,9,0,0,0,0,0,0},
             new [] {0,0,0,0,9,1,1,3,3,1,1,1,1,1,1,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,4,4,4,1,1,4,4,4,1,1,4,4,4,1,1,4,4,4,1,1,1,1,1,0,0,0,0,0,0},
             new [] {0,0,0,0,9,1,1,3,1,1,1,1,1,1,1,6,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,0,0,1},
@@ -95,31 +92,39 @@ public class Map
         Origin = new Point(0, 0);
     }
 
-    public void Display(Point playerPosition)
+public void Display(Point playerPosition)
+{
+    Console.CursorTop = Origin.Y;
+    for (int y = 0; y < mapData.Length; y++)
     {
-        Console.CursorTop = Origin.Y;
-        for (int y = 0; y < mapData.Length; y++)
+        Console.CursorLeft = Origin.X;
+        for (int x = 0; x < mapData[y].Length; x++)
         {
-            Console.CursorLeft = Origin.X;
-            for (int x = 0; x < mapData[y].Length; x++)
+            var cellValue = GetCellAt(x, y);
+            var cellVisual = cellVisuals[cellValue];
+            var cellColor = colorMap[cellValue];
+            Console.ForegroundColor = cellColor;
+            if (x == playerPosition.X && y == playerPosition.Y)
             {
-                var cellValue = GetCellAt(x, y);
-                var cellVisual = cellVisuals[cellValue];
-                var cellColor = colorMap[cellValue];
-                Console.ForegroundColor = cellColor;
-                if (x == playerPosition.X && y == playerPosition.Y)
-                {
-                    Console.Write('@');  // Draw the player
-                }
-                else
-                {
-                    Console.Write(cellVisual);
-                }
-                Console.ResetColor();
+                Console.Write('@');
             }
-            Console.WriteLine();
+            else
+            {
+                Console.Write(cellVisual);
+            }
+            Console.ResetColor();
         }
+        Console.WriteLine();
     }
+}
+
+public void PickUpDiamond(Point position)
+{
+    if (GetCellAt(position.X, position.Y) == CellType.Diamond)
+    {
+        mapData[position.Y][position.X] = (int)CellType.Floor;
+    }
+}
 
     public CellType GetCellAt(int x, int y)
     {

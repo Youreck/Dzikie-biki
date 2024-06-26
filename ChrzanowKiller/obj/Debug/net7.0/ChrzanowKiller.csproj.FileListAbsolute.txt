@@ -12,3 +12,17 @@ D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\refint\ChrzanowKiller.dll
 D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.pdb
 D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.genruntimeconfig.cache
 D:\kodowanie\ChrzanowKiller\obj\Debug\net7.0\ref\ChrzanowKiller.dll
+D:\urban-eureka-main\ChrzanowKiller\bin\Debug\net7.0\ChrzanowKiller.exe
+D:\urban-eureka-main\ChrzanowKiller\bin\Debug\net7.0\ChrzanowKiller.deps.json
+D:\urban-eureka-main\ChrzanowKiller\bin\Debug\net7.0\ChrzanowKiller.runtimeconfig.json
+D:\urban-eureka-main\ChrzanowKiller\bin\Debug\net7.0\ChrzanowKiller.dll
+D:\urban-eureka-main\ChrzanowKiller\bin\Debug\net7.0\ChrzanowKiller.pdb
+D:\urban-eureka-main\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.GeneratedMSBuildEditorConfig.editorconfig
+D:\urban-eureka-main\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.AssemblyInfoInputs.cache
+D:\urban-eureka-main\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.AssemblyInfo.cs
+D:\urban-eureka-main\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.csproj.CoreCompileInputs.cache
+D:\urban-eureka-main\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.dll
+D:\urban-eureka-main\ChrzanowKiller\obj\Debug\net7.0\refint\ChrzanowKiller.dll
+D:\urban-eureka-main\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.pdb
+D:\urban-eureka-main\ChrzanowKiller\obj\Debug\net7.0\ChrzanowKiller.genruntimeconfig.cache
+D:\urban-eureka-main\ChrzanowKiller\obj\Debug\net7.0\ref\ChrzanowKiller.dll
