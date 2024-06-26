@@ -1,4 +1,7 @@
-Wykaz pracy(niewolniczej niestetry)
-Miłosz: Movment, Mapa, system Diamentów
+Wykaz pracy(niewolniczej niestety)
+Miłosz: Movment, Mapa, 
 Maciej:NPC, Mapa
-Kacper: Monety, Diamenty
+Kacper:Diamenty
+
+Cięzko nam podzielić kategorię, ponieważ na pewnym etapie każdy pracował przy wszystkim.
+Commity w projekcie dodał Kacper. W historii githuba, może być widoczne jeszcze wersje testowe, gdzie widoczne sa zmiany.
