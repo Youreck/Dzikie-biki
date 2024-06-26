@@ -10,5 +10,6 @@ public enum CellType
     Shadow = 4,
     BackWall = 5,
     Door = 6,
-    Player = 10
+    Player = 10,
+    Player = 11
 }
